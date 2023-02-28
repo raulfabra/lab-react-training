@@ -36,3 +36,27 @@
     transform: rotate(360deg);
   }
 }
+
+#visa{
+  text-align: end;
+  width: 70px;
+}
+
+.targeta{
+  margin: auto;
+  width: 300px;
+}
+
+.license_car{
+  margin: auto;
+  background-color: blue;
+  width: 80%;
+  color: #fff;
+  border-radius: 1em;
+}
+
+#foto_perfil{
+  width: 100px;
+  object-fit: contain;
+  border-radius: 50%;
+}
