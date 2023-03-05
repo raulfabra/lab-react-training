@@ -7,6 +7,11 @@ import BoxColor from './components/BoxColor';
 import CreditCard from './components/CreditCard';
 import Rating from './components/Rating.jsx';
 import DriveCard from './components/DriveCard';
+import LikeButton from './components/LikeButton';
+import ClickablePicture from './components/ClickablePicture';
+import Dice from './components/Dice';
+import Carousel from './components/Carousel';
+import NumbersTable from './components/NumbersTable';
 
 
 function App() {
@@ -106,7 +111,27 @@ function App() {
         }}
       />
 
+      <h1>Button "Like"</h1>
+      <LikeButton />
 
+      <h1> Clickable Picture</h1>
+      <ClickablePicture img='maxence.png' imgClicked='maxence-glasses.png' />
+
+      <h1> DICE </h1>
+      <Dice />
+
+      <h1> Carousel </h1>
+      <Carousel
+        images={[
+          'https://randomuser.me/api/portraits/women/1.jpg',
+          'https://randomuser.me/api/portraits/men/1.jpg',
+          'https://randomuser.me/api/portraits/women/2.jpg',
+          'https://randomuser.me/api/portraits/men/2.jpg'
+        ]}
+      />
+
+      <h1>Table of Numbers</h1>
+      <NumbersTable limit={12} />
     </div>
   );
 }
